@@ -1,0 +1,105 @@
+{%extends 'template.html'%} {%load static%} {%block css%}
+<style>
+    .content-div p {
+        outline: 2px solid black !important;
+        padding: 1% !important;
+
+        outline-offset: -2px;
+        color: black !important;
+    }
+
+    label {
+
+        color: black !important;
+
+    }
+
+    div.form-group {
+        margin: 1%;
+    }
+
+    .address-box span {
+        display: block;
+    }
+
+    .address-box {
+        padding: 1%;
+        border: 2px solid black;
+    }
+
+    .edit_btn:hover {
+        color: black;
+        background-color: transparent;
+    }
+
+    .edit_btn {
+        transition: all 0.75s ease;
+        color: rgba(255, 165, 0, 1);
+        border: 2px solid black;
+        background-color: black;
+        padding: 0.5% 2%;
+        border-radius: 20px;
+        margin: auto !important;
+    }
+
+    .edit_btn_div {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+{%endblock%} {%block body%}
+<div class="h-2">
+    <span>
+        My Account
+    </span>
+</div>
+<div class="content-div content">
+
+    <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <!-- <input readonly type="text" class="form-control-plaintext" id="name" value="{{name}}"> -->
+            <p>{{name}}</p>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <!-- <input readonly type="text" class="form-control-plaintext" id="email" value="{{email}}"> -->
+            <p>{{email}}</p>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+        <div class="col-sm-10">
+            <!-- <input readonly type="text" class="form-control-plaintext" id="mobile" value="{{mobile}}"> -->
+            <p>{{mobile}}</p>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="address" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+            <div class="address-box">
+                {%for address_line in address%}
+                <span> {{address_line}} </span>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="user_type" class="col-sm-2 col-form-label">User type:</label>
+        <div class="col-sm-10">
+            <!-- <input readonly type="text" class="form-control-plaintext" id="user_type" value="{{user_type}}"> -->
+            <p>{{user_type}}</p>
+        </div>
+    </div>
+    <div class="edit_btn_div">
+        <a href="/accounts/myaccount/edit" class="edit_btn">Edit Profile</a>
+    </div>
+</div>
+
+{%endblock%}

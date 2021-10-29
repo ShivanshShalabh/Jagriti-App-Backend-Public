@@ -1,0 +1,139 @@
+.dnt-box {
+  border-bottom: 2px solid black;
+  margin-bottom: 1%;
+  /* margin: 0 5%; */
+  border-radius: 20px;
+  /* padding: 1%; */
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+
+.dnt-box button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 1s ease;
+  background: none;
+  color: white;
+}
+
+.switchToggle input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.switchToggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 70px;
+  max-width: 70px;
+  height: 30px;
+  background: #474747;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switchToggle label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.switchToggle input:checked + label,
+.switchToggle input:checked + input + label {
+  background: #3e98d3;
+}
+
+.switchToggle input + label:before,
+.switchToggle input + input + label:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 35px;
+  width: 26px;
+  height: 26px;
+  border-radius: 90px;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+
+.switchToggle input:checked + label:before,
+.switchToggle input:checked + input + label:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 90px;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+
+.switchToggle input:checked + label:after,
+.switchToggle input:checked + input + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+  width: 60px;
+}
+
+.toggle-switchArea {
+  margin: 10px 0 10px 0;
+}
+
+.form {
+  background-color: rgba(255, 165, 0, 1);
+}
+
+.dnt-div-2 {
+  padding: 1%;
+}
+
+.dnt-div-2 div {
+  margin: 1%;
+}
+
+.dnt-div-2 div span {
+  margin-right: 1%;
+}
+
+input[type="submit"] {
+  padding: 0.5% 1%;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: 2px solid white;
+  transition: all 1s ease;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.active-dnt {
+  color: black !important;
+  /* background-color: black !important; */
+}

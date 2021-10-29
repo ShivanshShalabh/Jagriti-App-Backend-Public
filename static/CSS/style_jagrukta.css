@@ -1,0 +1,43 @@
+.note {
+  border: 2px solid black !important;
+  color: black !important;
+  width: 90% !important;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.note h4 {
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  margin: auto !important;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-div button {
+  border-radius: 20px;
+  background-color: rgba(255, 165, 0, 1);
+  padding: 0% 2%;
+  transition: all 1s ease;
+}
+
+.btn-div button:hover {
+  color: white;
+  background-color: black;
+}
+
+.article-block {
+  border-bottom: 2px solid black !important;
+  padding: 2% 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .note h4 {
+    font-size: 1.5rem !important;
+  }
+}

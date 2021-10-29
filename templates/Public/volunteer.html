@@ -1,0 +1,96 @@
+{%extends 'template.html'%} {%load static%} {%block css%}
+
+<style>
+    #join {
+        font-size: 1.4rem;
+        padding: 0.75% 3%;
+        border-radius: 20px;
+        color: rgba(255, 165, 0, 1);
+        background-color: black;
+        margin: auto !important;
+        display: block;
+        transition: all 1s ease;
+    }
+
+    #join:hover {
+        color: black;
+        background-color: rgba(255, 165, 0, 1);
+    }
+
+    .content dt {
+        font-size: 1.5rem !important;
+    }
+
+    @media only screen and (max-width: 760px) {
+        #join {
+            padding: 0.75% 4%;
+            font-size: 1.1rem;
+        }
+
+        .content dt {
+            font-size: 1.2rem !important;
+        }
+    }
+
+</style>
+{%endblock%} {%block body%}
+<div class="h-2">
+    <span>
+        Volunteer With Us
+    </span>
+</div>
+<div class="content-div">
+    <div class="hd-3">
+        Who do we look for?
+    </div>
+
+    <ul class="content">
+        <li>Students pursuing graduation (any stream).</li>
+        <li>Graduates and final year students pursuing LLB degree (Bachelor of Laws).</li>
+        <li>Content Writers</li>
+        <li>Others</li>
+    </ul>
+    <hr>
+    <div class="hd-3">
+        Responsibilities
+    </div>
+    <dl class="content">
+        <dt>Undergraduates:</dt>
+        <dd>
+            <ul>
+                <li>Reaching out to the people in rural areas to spread awareness about the schemes and programs for
+                    them
+                    through offline workshops on weekends.</li>
+                <li>Creating contents like videos, banners etc. for the awareness drives.</li>
+            </ul>
+        </dd>
+        <dt>Law Students and Graduates:</dt>
+        <dd>
+            <ul>
+                <li>Reaching out to the people in rural areas to spread awareness about the schemes and programs for
+                    them through offline workshops on weekends.</li>
+                <li>Doing technical stuff like researching, blogging etc.</li>
+            </ul>
+        </dd>
+        <dt>Content Writers:</dt>
+        <dd>
+            <ul>
+                <li>Writing blogs and articles on social issues in order to spread awareness.</li>
+                <li>Reviewing blogs and articles.</li>
+            </ul>
+        </dd>
+        <dt>Others:</dt>
+        <dd>
+            <ul>
+                <li>Assisting in organization of the awareness drives.</li>
+                <li>Assisting in online work.</li>
+                <li>Delivering and picking up donations.</li>
+                <li>Any other required sector in which they have expertise.</li>
+            </ul>
+            <p>Please feel free to write to us at volunteer@jagritiapp.com for clarification of any further queries.</p>
+        </dd>
+    </dl>
+    <button id="join">Join us!</button>
+</div>
+
+{%endblock%}

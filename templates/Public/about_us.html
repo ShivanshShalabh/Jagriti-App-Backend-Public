@@ -1,0 +1,61 @@
+{%extends 'template.html'%} {%load static%} {%block css%}
+
+<style>
+    .hd-3::first-letter {
+        color: black !important;
+        font-size: 2.75rem;
+    }
+
+    @media only screen and (max-width: 760px) {
+
+        .hd-3::first-letter {
+
+            font-size: 1.3rem;
+        }
+
+    }
+
+    hr {
+        border: 2px solid black !important;
+    }
+
+</style>
+{%endblock%} {%block body%}
+<div class="h-2">
+    <span>
+        About Us
+    </span>
+</div>
+<div class="content-div">
+    <div class="hd-3">
+        What is the aim of Jagriti App?
+    </div>
+
+    <ul class="content">
+        <li>Jagriti App is developed with the main idea of spreading awareness among the economically
+            weaker
+            section of the
+            society
+            about what the government policies are for them so that they can develop with the help of these schemes and
+            programmes
+            which in turn help in country’s overall development.</li>
+        <li>The platform also serves as an aid for people who are deprived of resources and a platform
+            where
+            people can donate
+            essential goods.</li>
+        <li>We also want the app to be a solution to many other social problems and for that, we will
+            keep on
+            adding new features to
+            the app.</li>
+    </ul>
+    <hr>
+    <div class="hd-3">
+        How can we join you?
+    </div>
+    <p class="content">You can join us by volunteering with us. There are various opportunities like creating contents,
+        conducting offline
+        workshops, picking up and delivering donations etc......</p>
+    <p class="content">The list goes on, if you want to be a volunteer do visit this page. Click Here</p>
+</div>
+
+{%endblock%}
